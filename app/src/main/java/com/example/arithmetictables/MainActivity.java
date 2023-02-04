@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
             StringBuilder ans = new StringBuilder();
             for (i = 1; i <= rang; i++) {
                 res = num + i;
-                ans.append(String.valueOf(i) + " * " + String.valueOf(num) + "= " + String.valueOf(res) + "\n");
+                ans.append(String.valueOf(i) + " + " + String.valueOf(num) + "= " + String.valueOf(res) + "\n");
             }
             editor.putString(result, ans.toString());
         } else if (c == 2) {
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
             StringBuilder ans = new StringBuilder();
             for (i = 1; i <= rang; i++) {
                 res = num - i;
-                ans.append(String.valueOf(i) + " * " + String.valueOf(num) + "= " + String.valueOf(res) + "\n");
+                ans.append(String.valueOf(i) + " - " + String.valueOf(num) + "= " + String.valueOf(res) + "\n");
             }
             editor.putString(result, ans.toString());
         } else if (c == 3) {
