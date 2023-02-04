@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3mm"
+        android:layout_marginTop="5mm"
+        android:layout_marginRight="3mm"
+        android:layout_marginBottom="2mm"
+        android:background="@drawable/rounded_corner"
+        android:gravity="center"
+        android:text="Arithmetic Tables"
+        android:textColor="@color/colorL"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8mm"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_corner"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/numInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/color"
+            android:hint="Enter The Number"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/colorL" />
+
+        <EditText
+            android:id="@+id/ranInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/color"
+            android:gravity="top"
+            android:hint="Enter The Count"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/colorL" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7mm"
+        android:layout_marginRight="10dp"
+        android:text="* Please Click On The Arithmetic Table That You Want. "
+        android:textColor="@color/colorL"
+        android:textSize="14sp" />
+
+    <TableLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/rounded_corner">
+
+            <Button
+                android:id="@+id/AddBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:layout_column="0"
+                android:backgroundTint="@color/colorL"
+                android:text="ADDITION"
+                android:textColor="@color/color" />
+
+            <Button
+                android:id="@+id/SubBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:layout_column="1"
+                android:backgroundTint="@color/colorL"
+                android:text="SUBTRACTION"
+                android:textColor="@color/color" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:background="@drawable/rounded_corner">
+
+            <Button
+                android:id="@+id/DivBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorL"
+                android:layout_margin="10dp"
+                android:layout_column="0"
+                android:text="DIVISION"
+                android:textColor="@color/color" />
+
+            <Button
+                android:id="@+id/MulBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_column="1"
+                android:backgroundTint="@color/colorL"
+                android:text="MULTIPLICATION"
+                android:textColor="@color/color" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
